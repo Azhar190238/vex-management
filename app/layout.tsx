@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   title: "HITECH",
   description: "HITECH Management Group",
   icons: {
-    icon: "/removed-logo.png"
+    icon: "/logo.PNG"
   }
 };
 
