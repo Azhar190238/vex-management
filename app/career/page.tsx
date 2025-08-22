@@ -101,7 +101,6 @@ const JobOpportunities = () => {
 
   return (
     <main>
-      {/* Hero Section (Black Background) */}
       <section className="relative min-h-screen w-full overflow-hidden flex items-center justify-center font-opensans">
         <div className="absolute inset-0 z-0">
           <Image
