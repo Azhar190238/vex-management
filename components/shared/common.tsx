@@ -71,7 +71,7 @@ const CommonHeading: React.FC<CommonHeadingProps> = ({
             showSub ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
           }`}
         >
-          <FlipText className="text-2xl font-bold -tracking-widest text-black dark:text-white md:text-4xl">
+          <FlipText className="text-xl sm:text-2xl max-w-[600px] font-bold -tracking-widest sm:-tracking-widest  md:-tracking-widest text-black dark:text-white md:text-4xl">
             {subheading}
           </FlipText>
         </div>

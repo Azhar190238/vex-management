@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { FaHardHat, FaUsers, FaShieldAlt, FaClock, FaTruck } from "react-icons/fa";
 import CommonHeading from "./shared/common";
-// import CommonHeading from "./common/CommonHeading";
 
 const WhyChooseSection = () => {
   const features = [
@@ -53,12 +52,13 @@ const WhyChooseSection = () => {
         />
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 relative">
           {features.map((feature, index) => (
             <div
               key={index}
               className="flex flex-col items-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
             >
+              
               <div className="bg-gradient-to-r from-[#FF6F3C]/30 to-[#FF8356]/30 p-5 rounded-full mb-6">
                 {feature.icon}
               </div>

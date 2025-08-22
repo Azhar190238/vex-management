@@ -57,7 +57,7 @@ const ServicesSection = () => {
         <CommonHeading
           icon={<GrServices className="text-[#FF6F3C] text-3xl" />}
           heading="OUR SERVICES"
-          subheading="Comprehensive Building Management Solutions"
+          subheading=" Building Management Solutions"
           description="We provide innovative, reliable, and high-quality building management solutions tailored for each client’s unique needs. From planning and compliance to smart systems and technical expertise, we have you covered."
         />
 
