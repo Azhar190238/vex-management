@@ -47,7 +47,7 @@ const WhyChooseSection = () => {
           heading="Why Choose Our Building Management"
           description="We combine expertise, client focus, and state-of-the-art solutions to ensure every building project is executed safely, efficiently, and successfully."
           containerClassName="mb-16 text-center"
-          headingClassName="text-3xl md:text-4xl font-bold text-gray-900"
+          headingClassName="text-3xl md:text-4xl font-bold"
           descriptionClassName="text-gray-600 text-lg md:text-xl mt-4"
         />
 

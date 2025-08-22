@@ -67,21 +67,19 @@ const CommonHeading: React.FC<CommonHeadingProps> = ({
       {subheading && (
         <div
           ref={subRef}
-          className={` transition-all duration-700 ${
-            showSub ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
+          className={`overflow-hidden transition-all duration-700 ${
+            showSub ? "max-h-full opacity-100 mt-4" : "max-h-0 opacity-0"
           }`}
         >
-          <FlipText className="text-xl sm:text-2xl max-w-[600px] font-bold -tracking-widest sm:-tracking-widest  md:-tracking-widest text-black dark:text-white md:text-4xl">
+          <p className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold animate-pulse text-black  text-center break-words max-w-[600px] mx-auto">
             {subheading}
-          </FlipText>
+          </p>
         </div>
       )}
 
       {/* Description with typing animation */}
       <p className={descriptionClassName}>
-        <TypingAnimation startOnView={true}>
-          {description}
-        </TypingAnimation>
+        <TypingAnimation startOnView={true}>{description}</TypingAnimation>
       </p>
     </div>
   );
