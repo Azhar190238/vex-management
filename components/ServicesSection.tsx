@@ -2,10 +2,19 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaChevronRight, FaBuilding, FaFileAlt, FaUserShield, FaTools, FaCogs } from "react-icons/fa";
+import {
+  FaChevronRight,
+  FaBuilding,
+  FaFileAlt,
+  FaUserShield,
+  FaTools,
+  FaCogs,
+} from "react-icons/fa";
 // import nHeading from "../common/CommonHeading";
 import EmergencyResponse from "./EmergencyResponse";
 import CommonHeading from "./shared/common";
+import { GrServices } from "react-icons/gr";
+import { Meteors } from "./magicui/meteors";
 
 const ServicesSection = () => {
   const services = [
@@ -44,10 +53,9 @@ const ServicesSection = () => {
   return (
     <section className="py-24 bg-gray-50 font-opensans">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-
         {/* Common Heading */}
         <CommonHeading
-          icon={<FaBuilding className="text-[#FF6F3C] text-3xl" />}
+          icon={<GrServices className="text-[#FF6F3C] text-3xl" />}
           heading="OUR SERVICES"
           subheading="Comprehensive Building Management Solutions"
           description="We provide innovative, reliable, and high-quality building management solutions tailored for each client’s unique needs. From planning and compliance to smart systems and technical expertise, we have you covered."
@@ -63,6 +71,7 @@ const ServicesSection = () => {
             >
               {/* Background Image */}
               <div className="absolute inset-0 z-0">
+               
                 <Image
                   src={service.link}
                   alt={service.title}
@@ -71,6 +80,7 @@ const ServicesSection = () => {
                   priority={index < 3}
                   quality={60}
                 />
+                <Meteors number={70} className="absolute inset-0 z-10 pointer-events-none" />
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-500" />
               </div>
 

@@ -5,71 +5,64 @@ import { FaFileDownload, FaPhoneAlt } from "react-icons/fa";
 
 const ConnectWithUsSection = () => {
   return (
-    <section className="relative w-full py-20 md:py-24 min-h-screen flex items-center font-opensans">
-      {/* Background Image with Gradient Overlay */}
+    <section className="relative w-full py-24 md:py-32 min-h-screen flex items-center font-opensans">
+      {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/DSC00810.JPG"
-          alt="Traffic control background"
+          src="/building-bg.jpg" // Replace with your building management image
+          alt="Building management background"
           fill
-          className="object-cover opacity-50"
-          quality={100}
+          className="object-cover object-center opacity-60"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/70" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Left Card: Connect With Us Today */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 text-white flex flex-col justify-between h-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          
+          {/* Left Card: Contact Us */}
+          <div className="bg-white/10 backdrop-blur-xl rounded-3xl p-10 flex flex-col justify-between h-full border border-white/20 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 font-anton uppercase">
-                Connect With Us Today
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 font-anton uppercase text-gradient bg-gradient-to-r from-[#FF6F3C] to-[#FF8356] bg-clip-text text-transparent">
+                Contact Our Experts
               </h2>
-              <p className="text-base md:text-lg text-gray-200 leading-relaxed mb-6">
-                Get in touch to discuss your traffic control needs with our
-                experienced team. We're ready to help you find fast, compliant,
-                and cost-effective solutions to keep your site safe and your
-                project running on time.
+              <p className="text-gray-200 text-lg md:text-xl leading-relaxed mb-6">
+                Discuss your building management requirements with our experienced team. We provide fast, reliable, and efficient solutions tailored to your project needs.
               </p>
             </div>
             <Link
               href="/contact"
-              className="flex items-center justify-center gap-3 bg-[#FF6F3C] hover:bg-[#FF6F3C] text-white px-8 py-4 rounded-full font-semibold text-base uppercase tracking-wide transition-all duration-300 hover:shadow-2xl hover:scale-105 focus:outline-none focus:ring-4 focus:ring-[#FF8356]"
+              className="flex items-center justify-center gap-3 bg-gradient-to-r from-[#FF6F3C] to-[#FF8356] hover:from-[#FF8356] hover:to-[#FF6F3C] text-white px-8 py-4 rounded-full font-semibold uppercase tracking-wide transition-all duration-300 hover:shadow-2xl hover:scale-105 focus:outline-none focus:ring-4 focus:ring-[#FF6F3C]"
             >
-              <FaPhoneAlt className="text-lg" />
-              Request a Call Back
+              <FaPhoneAlt className="text-lg animate-bounce" />
+              Request a Consultation
             </Link>
           </div>
 
-          {/* Right Card: Let T&S Manage Your Next Project */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 text-white flex flex-col justify-between h-full">
+          {/* Right Card: Learn More */}
+          <div className="bg-white/10 backdrop-blur-xl rounded-3xl p-10 flex flex-col justify-between h-full border border-white/20 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 font-anton uppercase">
-                Let T&S Manage Your Next Project
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 font-anton uppercase text-gradient bg-gradient-to-r from-[#FF6F3C] to-[#FF8356] bg-clip-text text-transparent">
+                Professional Building Management
               </h2>
-              <p className="text-base md:text-lg text-gray-200 leading-relaxed mb-6">
-                Need reliable traffic management for your next project? T&S
-                offers end-to-end traffic control services. Our experienced team
-                handles custom Traffic Control Plans, council permits, and
-                certified on-site controllers. Download our capability statement
-                to learn more about how we can manage your project.
+              <p className="text-gray-200 text-lg md:text-xl leading-relaxed mb-6">
+                We provide comprehensive building management services, including facility oversight, maintenance planning, safety compliance, and operational efficiency solutions. 
+                Download our capability statement to see how we can streamline your building operations.
               </p>
             </div>
             <Link
-              href="/T&S Capability Statement  2025.pdf"
+              href="/Building_Capability_Statement.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 bg-white text-gray-900 px-8 py-4 rounded-full font-semibold uppercase tracking-wide transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-300
-              text-xs md:text-base
-              "
+              className="flex items-center justify-center gap-3 bg-white/90 hover:bg-white text-gray-900 px-8 py-4 rounded-full font-semibold uppercase tracking-wide transition-all duration-300 hover:shadow-2xl hover:scale-105 text-base md:text-lg"
             >
               <FaFileDownload className="text-lg" />
-              See the Attached Capability Statement
+              View Capability Statement
             </Link>
           </div>
+          
         </div>
       </div>
     </section>
@@ -77,3 +70,4 @@ const ConnectWithUsSection = () => {
 };
 
 export default ConnectWithUsSection;
+

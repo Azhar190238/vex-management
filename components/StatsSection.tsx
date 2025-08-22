@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { FaAward, FaProjectDiagram, FaUserTie } from "react-icons/fa";
+import { Meteors } from "./magicui/meteors";
 
 const useCounter = (end: number, duration: number = 2000, trigger: boolean = false) => {
   const [count, setCount] = useState(0);
@@ -78,6 +79,7 @@ const StatsSection = () => {
               </h3>
               <p className="text-xl font-semibold text-gray-800">Years Experience</p>
             </div>
+            <Meteors number={30} className="absolute inset-0 z-10 pointer-events-none" />
           </div>
 
           {/* Employees */}
@@ -91,6 +93,7 @@ const StatsSection = () => {
               <h3 className="text-6xl font-bold text-[#FF6F3C] mb-3">{employees}</h3>
               <p className="text-xl font-semibold text-gray-800">Employee's</p>
             </div>
+            <Meteors number={20} className="absolute inset-0 z-10 pointer-events-none" />
           </div>
 
           {/* Projects */}
@@ -106,6 +109,7 @@ const StatsSection = () => {
               </h3>
               <p className="text-xl font-semibold text-gray-800">Projects Completed</p>
             </div>
+            <Meteors number={30} className="absolute inset-0 z-10 pointer-events-none" />
           </div>
 
         </div>
