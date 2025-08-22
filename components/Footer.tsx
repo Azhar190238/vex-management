@@ -307,7 +307,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="mt-8 text-center text-sm text-gray-500">
-          T&S Traffic Control © {new Date().getFullYear()}
+          HITECH Management Group © {new Date().getFullYear()}
         </div>
       </div>
     </footer>
